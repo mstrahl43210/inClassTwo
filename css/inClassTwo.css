@@ -1,1 +1,118 @@
 /*All css for this project should be in this file only, not in the html file*/
+
+body {
+  background-color: wheat;
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+  text-align: center;
+  font-family: serif;
+}
+
+header {
+  width: 96.875%;
+  border-radius: 1px;
+  border: 3px solid brown;
+  border-style: inset;
+  background-color: tan;
+  text-align: left;
+}
+
+header > h1 {
+  color: brown;
+  animation: backAndForth 3s 2s infinite ease-in-out alternate;
+}
+
+@keyframes backAndForth {
+  from {
+    margin-left: 10%;
+  }
+  to {
+    margin-left: 60%;
+  }
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+}
+
+nav > ul li {
+  flex: 15;
+  text-align: center;
+}
+
+nav > ul li a {
+  text-decoration: none;
+  color: forestgreen;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: color .1s ease-out .1s, font-size .1s ease-in .1s;
+}
+
+nav > ul li a:hover {
+  color: crimson;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 130%;
+}
+
+p {
+  color: brown;
+  padding: 20px;
+}
+
+.copyinfo {
+  color: gray;
+  font-size: 10px;
+  text-align: left;
+}
+
+#button1 {
+  text-align: center;
+  border: 2px solid brown;
+  box-shadow: inset 5px 5px 5px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  transition: background-color .1s ease-out .1s;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#button1:hover {
+  background-color: red;
+}
+
+#button2 {
+  text-align: center;
+  border: 2px solid blue;
+  box-shadow: inset 5px 5px 5px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  background-color: slateblue;
+  color: white;
+  cursor: pointer;
+  transition: margin-left .1s ease-out .1s, margin-right .1s ease-in .1s;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#button2:hover {
+  margin-left: 600px;
+  margin-right: 0px;
+}
+
+img {
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 20px;
+  transition: transform 1s ease-out .1s;
+}
+
+img:hover {
+  transform: rotate(360deg);
+}
+
+input {
+  margin: 10px;
+}
